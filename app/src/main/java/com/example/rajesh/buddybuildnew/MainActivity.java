@@ -12,9 +12,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView tv_one= (TextView) findViewById(R.id.tv_one);
-        tv_one.setText(null);
-        if(tv_one.getText().toString().equals("ssh")){
-            Toast.makeText(this,"d",Toast.LENGTH_SHORT).show();
+        tv_one.setText("");
+        if(tv_one.getText().toString().equals("")){
+            Toast.makeText(null,"d",Toast.LENGTH_SHORT).show();
         }
     }
 }
